@@ -24,7 +24,7 @@ function FontLabel() {
   return (
     <>
       <div style={{ fontSize }}>Current font size: {fontSizeLabel}</div>
-      <button onClick={increaseFontSize}>size up</button>
+      <button onClick={increaseFontSize}>size up_</button>
       <button onClick={toggleTrigger}>toggle: {trigger.toString()}</button>
     </>
   );
