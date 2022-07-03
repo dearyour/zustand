@@ -32,7 +32,6 @@ const TodoListCreator = () => {
 };
 
 export default TodoListCreator;
-
 let id = 0;
 function getId() {
   return id++;
