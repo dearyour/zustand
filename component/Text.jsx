@@ -7,6 +7,7 @@ const useStore = create((set) => ({
   toggleTrigger: () => set((state) => ({ trigger: !state.trigger })),
   // toggleTrigger: () => set((state) => ({ trigger: !state.trigger }), true),
   // trigger 가 트루가 되는 순간 모든상태값이 다 날라가버린다
+  // 즉 set의 두번째 인자 default가 false true 면 state를 완전히 대체한다
 }));
 
 function FontLabel() {
