@@ -5,6 +5,8 @@ const useStore = create((set) => ({
   increaseFontSize: () => set((state) => ({ fontSize: state.fontSize + 1 })),
   trigger: false,
   toggleTrigger: () => set((state) => ({ trigger: !state.trigger })),
+  // toggleTrigger: () => set((state) => ({ trigger: !state.trigger }), true),
+  // trigger 가 트루가 되는 순간 모든상태값이 다 날라가버린다
 }));
 
 function FontLabel() {
